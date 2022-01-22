@@ -2,13 +2,16 @@
   --color-primary: #917758;
 }
  
-/* -- BARRA DE ROLAGEM -- */
+
+/****************** 
+*  BARRA DE ROLAGEM
+*******************/
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #917758a6;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -35,7 +38,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
+/*********** 
+*    HOME
+***********/
 .home {
+  position: relative; /*  quando eu defino o position absolute para o filho dessa classe/elemento ele centraliza automaticamente ao meio da tela mesmo em dimensões diferentes "melhor maneira de centralizar" dai ele abre os atributos top, left, bottom, e etc. */
   background-size: cover; /* cover = cobrir / ajusta a proporção da imagem (pra que fique certo na tela) */
   background-image: url(/assets/images/bg-home.jpg);
   height: 100vh; /* viewport height = tamanho da tela (como se fosse porcentagem) */
@@ -58,7 +66,8 @@ body {
 .home .header .nav ul li {
   display: flex;
   align-items: center;
-  margin: 0 10px;
+  justify-content: center;
+  width: 150px;
 }
 
 .home .header .nav ul li a {
@@ -75,6 +84,40 @@ body {
   color: var(--color-primary);  
 }
 
-.home .header .nav ul li .logo {
+.home .header /* .nav ul li */ .logo {
   margin: 0 30px;
+}
+
+/* ***************
+*   HOME - BANNER
+******************/
+.home .banner  {
+  position: absolute; /* para centralizar essas classes, você precisa dinifir position: relative; para o pai da div que vc quer centralizar ao meio da página.(porque eu quero centralizar ele na Section)*/
+  top: 50%;
+  left: 50%;
+  height: 270px;
+  width: 770px;
+  margin-top: -75px;
+  margin-left: -385px; /* é a metade do valor do width pra centralizar na tela conforme o position */
+  color: white;
+  text-align: center;
+}
+
+.home .banner span {
+  display: block;
+}
+
+.home .banner .slogan1 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.home .banner h1 {
+  font-size: 120px;
+}
+
+.home .banner .slogan2 {
+  margin-bottom: 15px;
 }
