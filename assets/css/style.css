@@ -1,0 +1,80 @@
+:root {
+  --color-primary: #917758;
+}
+ 
+/* -- BARRA DE ROLAGEM -- */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+} 
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  background-size: cover; /* cover = cobrir / ajusta a proporção da imagem (pra que fique certo na tela) */
+  background-image: url(/assets/images/bg-home.jpg);
+  height: 100vh; /* viewport height = tamanho da tela (como se fosse porcentagem) */
+}
+
+.home .header {
+  padding: 30px ;
+}
+
+.home .header .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.home .header .nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.home .header .nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.home .header .nav ul li a {
+  color: white;
+  text-transform: uppercase; /* letra maiúscula */
+  text-decoration: none; /*  remove o underline do link */
+  font-weight: bold; /* negrito */
+  font-size: 12px;
+  padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);  
+}
+
+.home .header .nav ul li .logo {
+  margin: 0 30px;
+}
