@@ -1,5 +1,7 @@
 :root {
   --color-primary: #917758;
+  --color-secondary: #3c2915;
+  --color-primary-light: #f5eee6;
 }
  
 
@@ -7,7 +9,7 @@
 *  BARRA DE ROLAGEM
 *******************/
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,6 +39,12 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 
 
 /*********** 
@@ -120,4 +128,143 @@ body {
 
 .home .banner .slogan2 {
   margin-bottom: 15px;
+}
+
+
+/* ***************
+*      ABOUT
+******************/
+.about {
+  background-color: var(--color-primary);
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .timing {
+  width: 33%;
+  padding: 20px;
+  background-image: url(../images/brush-big.jpg);
+  position: relative;
+  top: -50px;
+}
+
+.about .timing .overley {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+  width: 50px;
+}
+
+.about .timing h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary);
+  width: fit-content; /* faz com que o tamanho do h3 seja igual ao tamanho do conteúdo (tamanho todo do h3) */
+  margin: 30px auto;
+  font-size: 30px;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text:after { /* :afeter = depois */
+  content: '•';
+  color: white;
+  font-size: 15px;
+  display: block;
+  margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after { /* last-of-type = subescreve o último item */
+  content: "|";
+}
+
+.about .timing .text h4 {
+  color: grey;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.about .timing span {
+  color: white;
+  font-size: 13px;
+  display: block;
+}
+
+.about .experience {
+  width: 66%;
+  color: white;
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about .experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about .experience h2:after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 20px 0;
+}
+
+.about .experience .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .experience .text p {
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+
+/* ***************
+*      SERVICES
+******************/
+
+.services {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-primary-light);
+}
+
+.services h2 {
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.services .boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.services .box {
+  border: 3px solid var(--color-primary);
+  padding: 50px 40px;
+  margin: 30px;
+}
+
+.services .box h4 {
+  color: var(--color-secondary);
+  margin-top: 30px;
+}
+
+.services .box p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 30px;
 }
