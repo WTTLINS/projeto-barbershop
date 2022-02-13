@@ -413,7 +413,7 @@ input, select, option {
 ******************/
 .location {
   padding: 100px 0;
-  background-image: url(../assets/images/bg-location.jpg);
+  background-image: url(../images/bg-location.jpg);
   background-size: cover; /* coloca a imagem na área toda */
   /* background-attachment: fixed; */
 }
