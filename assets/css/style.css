@@ -59,7 +59,7 @@ body {
   background-size: cover; /* cover = cobrir / ajusta a proporção da imagem (pra que fique certo na tela) */
   background-image: url(/assets/images/bg-home.jpg);
   height: 100vh; /* viewport height = tamanho da tela (como se fosse porcentagem) */
-  background-attachment: fixed; /* fixa a imagem na tela */
+  /* background-attachment: fixed; */ /* fixa a imagem na tela */
 }
 
 .home .header {
@@ -415,7 +415,7 @@ input, select, option {
   padding: 100px 0;
   background-image: url(/assets/images/bg-location.jpg);
   background-size: cover; /* coloca a imagem na área toda */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .location .head {
